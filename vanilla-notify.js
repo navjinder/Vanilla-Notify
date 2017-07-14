@@ -47,6 +47,14 @@ var vNotify = (function() {
   var custom = function(params) {
     return addNotify(params);
   };
+  
+  var removeAll = function(){
+    var containers = document.getElementsByClassName('vnotify-container');
+    for (var i = 0, len = containers.length; i < len; i++) {
+        containers[i].parentNode.removeChild(containers[i]);
+    }
+    return null;
+  };
 
   var addNotify = function(params) {
     if (!params.title && !params.text) {

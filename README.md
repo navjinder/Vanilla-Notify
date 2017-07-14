@@ -33,6 +33,9 @@ vNotify.error({text: 'text', title:'title'});
 
 //Notify Notification
 vNotify.notify({text: 'text', title:'title'});
+
+//Notify Remove All
+vNotify.removeAll();
 ```
 
 ##Global Options
