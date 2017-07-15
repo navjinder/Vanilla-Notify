@@ -47,7 +47,7 @@ var vNotify = (function() {
   var custom = function(params) {
     return addNotify(params);
   };
-  
+
   var removeAll = function(){
     var containers = document.getElementsByClassName('vnotify-container');
     for (var i = 0, len = containers.length; i < len; i++) {
@@ -235,6 +235,7 @@ var vNotify = (function() {
     notify: notify,
     custom: custom,
     options: options,
-    positionOption: positionOption
+    positionOption: positionOption,
+    removeAll: removeAll
   };
 })();
